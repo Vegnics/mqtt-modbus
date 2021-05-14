@@ -5,8 +5,8 @@ from time import time,sleep
 
 args = sys.argv
 
-modServerIp = "192.168.1.103"
-modServerPort = 502
+modServerIp = "192.168.0.17"
+modServerPort = 5020
 
 if "-serverIp" in args:
     idx = args.index("-serverIp")

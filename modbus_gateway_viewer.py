@@ -63,7 +63,8 @@ class modbusApp(tk.Tk):
         self.client.connect()
         self.readRegsthread = Timer(0.5,self.readRegs)
         self.readRegsthread.start()
-        #self.publisher = registerPublisher(1.0,self.tcpipdict["brokerIp"],self.tcpipdict["brokerPort"],self.tcpipdict["modServerIp"],self.tcpipdict["modServerPort"])
+        #self.publisher = registe
+        #Publisher(1.0,self.tcpipdict["brokerIp"],self.tcpipdict["brokerPort"],self.tcpipdict["modServerIp"],self.tcpipdict["modServerPort"])
         self.title("PLC <--> MODBUS-TCP<--> MQTT : VIEWER")
         self.geometry("1200x900")
         self.resizable(0,0)
